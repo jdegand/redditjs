@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <p>Joined: {{returnedUser.createdAt}}</p>
+    <p>Username: {{returnedUser.username}}</p>
+    <h2>Posts</h2>
+    <div>
+      {{#each returnedUser.posts}}
+        <p>{{this.title}}</p>
+      {{/each}}
+    </div>
+  </div>
+</div>
