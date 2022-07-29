@@ -42,6 +42,7 @@ MakeSchool was a coding bootcamp that went under.  Most content was made free an
 - chai
 - mocha
 - bootstrap
+- jquery
 
 ## How To Use
 
