@@ -41,6 +41,7 @@ MakeSchool was a coding bootcamp that went under.  Most content was made free an
 - mongoose
 - chai
 - mocha
+- bootstrap
 
 ## How To Use
 
@@ -87,7 +88,7 @@ $ npm start
 - Limit upvotes/downvotes to 1 per user - check array for user id before execution
 - Can't get a console.log to register in the ajax script
 - Middleware to pass currentUser to all routes
-- Doesn't show cookies blocked until you try to login / signup
+- Doesn't show cookies are blocked until you try to login / signup
 
 ## Resources
 - [Stack Overflow](https://stackoverflow.com/questions/21396524/what-is-the-difference-between-assert-expect-and-should-in-chai) - assert vs expect
