@@ -7,7 +7,6 @@ const mongoose = require('mongoose');
 const checkAuth = require('./middleware/checkAuth');
 require('dotenv').config();
 
-//const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const postsRouter = require('./routes/posts');
 const commentsRouter = require('./routes/comments');
@@ -36,9 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
 
 app.use(checkAuth);
-// routes
 
-//app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
