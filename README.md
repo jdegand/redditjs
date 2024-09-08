@@ -7,6 +7,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+  - [Screenshots](#screenshots)
   - [Built With](#built-with)
 - [How to Use](#how-to-use)
 - [Thoughts](#thoughts)
@@ -17,21 +18,37 @@
 
 MakeSchool was a coding bootcamp that went under.  Most content was made free and I found this and decided to follow along.
 
-![](redditjs-home-not-loggedin.png)
+### Screenshots
 
-![](redditjs-signup.png)
+![Not logged in](screenshots/redditjs-home-not-loggedin.png)
 
-![](redditjs-home-loggedin.png "logged in")
+***
 
-![](redditjs-posts.png)
+![Signup](screenshots/redditjs-signup.png)
 
-![](redditjs-new-post.png)
+***
 
-![](redditjs-category-filtering.png "filter by subreddit category")
+![Logged In](screenshots/redditjs-home-loggedin.png "logged in")
 
-![](redditjs-post.png)
+***
 
-### Built With 
+![Posts](screenshots/redditjs-posts.png)
+
+***
+
+![New Post](screenshots/redditjs-new-post.png)
+
+***
+
+![Filtering](screenshots/redditjs-category-filtering.png "filter by subreddit category")
+
+***
+
+![Post](screenshots/redditjs-post.png)
+
+***
+
+### Built With
 
 - bcryptjs
 - cookie-parser
@@ -65,33 +82,34 @@ $ npm start
 
 - Worked on this November 2021, I got stuck on the nested replies and put it down and forgot about it til July 2022.  
 - I deviated from the instructions at various points and that made this project harder to complete.  
-- I didn't add a controllers file. 
-- I used mergeParams to make the nested routes. 
-- I didn't create a separate db file - I like to just add it to the app/index/server.js file. 
+- I didn't add a controllers file.
+- I used mergeParams to make the nested routes.
+- I didn't create a separate db file - I like to just add it to the `app/index/server.js` file.
 - The final result is sort of held together by duct tape but it matches the functionality of the tutorial's completed result.  
 - Need to refresh to see the score change on the page index page although the score is updated automatically with the jquery.  
 - Could try to use the jquery to update the player score in the page index page.  
-- lean() is a critical fix for handlebars rendering issues. 
-- Adding the pre's to the schemas fixed nested reply links from missing a postId property. 
+- `lean()` is a critical fix for handlebars rendering issues.
+- Adding the pre's to the schemas fixed nested reply links from missing a postId property.
 - Populating in the routes didn't work as well.  
-- Unsure if the order of lean and populate calls matters. ie model.lean().populate('') vs model.populate('').lean()
+- Unsure if the order of lean and populate calls matters i.e. `model.lean().populate('')` vs. `model.populate('').lean()`
 - Converting to async just requires using try and catch blocks. The tutorial makes it seem like a big deal.  
-- The tutorial used bcryptjs but probably should have used regular bcrypt.
+- The tutorial used bcryptjs, but probably should have used regular bcrypt.
 - Not Found - problem with navbar - didn't reflect logged in status - fixed by passing currentUser variable in error handler
 
 ## Continued Development
 
-- Dependencies could be updated further but mocha has breaking changes
+- Dependencies could be updated further, but Mocha has breaking changes.
 - Bootstrap styling for tablets & up and down buttons
 - Redditjs and Home in the navbar are redundant.  Home Link could be eliminated.  
 - Nested reply order - works fine when starting from stratch.  Older replies from development didn't display correctly.
-- Add delete functionality. 
+- Add delete functionality.
 - Limit upvotes/downvotes to 1 per user - check array for user id before execution
 - Can't get a console.log to register in the ajax script
 - Middleware to pass currentUser to all routes
 - Doesn't show cookies are blocked until you try to login / signup
 
-## Resources
+## Useful Resources
+
 - [Stack Overflow](https://stackoverflow.com/questions/21396524/what-is-the-difference-between-assert-expect-and-should-in-chai) - assert vs expect
 - [Code For Geek](https://codeforgeek.com/unit-testing-nodejs-application-using-mocha/) - unit testing with mocha
 - [Stack Overflow](https://stackoverflow.com/questions/25260818/rest-with-express-js-nested-router) - nested routes
